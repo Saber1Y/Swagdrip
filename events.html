@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+
+
+    .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+            grid-gap: 10px; /* Adjust the gap between grid items */
+            padding:30px;
+            padding-top: 300px;
+            
+    }
+
+    .grid-item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        background-color:rgb(40, 87, 40);
+        padding-bottom:50px;
+        
+        
+    }
+
+    e1 {
+        font-size: 30px;
+        color:#eed9c4
+    }
+
+    e2 {
+        color:#eed9c4;
+        font-size:16px;
+    }
+</style>
+</head>
+<body>
+    <section class = "header2">
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href = "homepg.html" >home</a>
+            <a href = "discover.html">discover</a>
+            <a href = "events.html">events</a>
+            <a href = "index.html">map</a>
+            <a href = "account.html">account</a>
+    </div>
+    <div id="button-container">
+        <a href = "account.html">
+        <img id="button-image" src="heart.png" alt = "Click Me"></a>
+    </div>
+    <span style="font-size:30px;cursor:pointer; position: right;" onclick="openNav()">&#9776;</span>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+
+
+<div class = "text-box3">
+    <h1>Events</h1>
+    <p>find the next pop ups across Africa!</p>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <e1>Lagos Thrifts Fest<br> @ Victoria Island<br><br></e1>
+            <e2>January 27 @ 10pm</e2>
+        </div>
+        <div class="grid-item">
+            <e1>Johannesburg Thrift Fest <br>@ Johannesburg <br><br></e1>
+            <e2>February 8 @ 1pm</e2>
+        </div>
+        <div class="grid-item">
+            <e1>Cairo Thrift Fedt<br> @ Cairo <br><br></e1>
+            <e2> June 22, 3-5pm</e2>
+        </div>
+    </div>
+</div>
+<a href="index.html" class="rounded-button">View on Maps!</a>
+</body>
+
+</html>

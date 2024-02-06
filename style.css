@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eed9c4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px; /* Adjust the border-radius for roundness */
+    cursor: pointer;
+    font-size: 40px;
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    
+}
+
+.rounded-button:hover {
+    background-color: rgb(40, 87, 40);
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(thrift.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{
+    width:90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: 'Poppins', sans-serif;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 14px 40px;
+    font-size: 19px;
+    margin-right: 26px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(22, 49, 22);
+    background:rgb(51, 110, 51);
+    transition: 1s;
+    font-family: 'Poppins', sans-serif;
+}
+.header2 {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box2{
+    width:90%;
+    color: rgb(40, 87, 40);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box2 h1{
+    font-size: 52px;
+}
+.text-box2 p{
+    margin: 10px 0 30px;
+    font-size: 14px;
+    color: rgb(40, 87, 40);
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 130px;
+    margin-left: -40px;
+}
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color:#eed9c4	;
+    border: 1px solid rgb(40, 87, 40);
+    padding: 10px 24px;
+    font-size: 19px;
+    background:rgb(40, 87, 40);
+    position: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.hero-btn2:hover{
+    border: 1px solid rgb(28, 65, 28);
+    background:rgb(51, 110, 51);
+    color:#eed9c4	;
+    transition: 1s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(28, 65, 28);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 6px 8px 28px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #eed9c4;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(178, 176, 130);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #button-container {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+#button-image {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.text-box3{
+    width:90%;
+    color: rgb(40, 87, 40);
+    position:absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box3 h1{
+    font-size: 52px;
+}
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+    font-size: 15px;
+    text-align: left;
+
+}
+.tab.active h3 {
+    font-size: 18px;
+    text-align: left;
+}
+.tabs {
+    display: flex;
+    
+}
+
+.tab-button {
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: rgb(40, 87, 40);
+    color: #eed9c4;
+    border: #fff;
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+}
+.tab-button:hover {
+    color: rgb(178, 176, 130);
+}
+.form{
+    display: table;
+    background: rgb(40, 87, 40);
+    padding: 30px 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 14px;
+    color: #eed9c4;
+    
+}
+input[type=text] {
+    width: 90%;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 2px 2px;
+    margin: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type=submit] {
+    padding: 6px;
+}
+#map {
+    height: 700px;
+    width: 100%;
+}
+/* Grid layout for images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 100px; /* Adjust spacing between images */
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the container fill the full viewport height */
+}
+
+.image-grid img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Modal styles (similar to previous examples) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgb(40, 87, 40);
+    /*padding: 20px;*/
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: flex; /* Create a flex container */
+    width: 700px; /* Set the width to 50% of the viewport width */
+    /*max-width: 80vw; /* Limit the maximum width to 80% of the viewport width */
+    height: 500px; /* Set the height to 50% of the viewport height */
+    /*max-height: 80vh; /* Limit the maximum height to 80% of the viewport height */
+     /* Arrange the columns in a vertical stack */
+}
+
+#modal-text {/* Limit the width to 50% of the modal */
+    padding-bottom: 1000px; 
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: white;
+}
+
+#modal-image {
+    width: 300px; /* Ensure the image doesn't exceed the width of the modal */
+    height: 300px;
+    /*display: block;*/
+    border-radius: 5%;
+    padding-left: 10px; /* Center the image horizontally within the modal */
+}
+
+
+#modal-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Style the right column (text column) */
+
+
+#modal-price {
+    font-size: 20px; /* Limit the width to 50% of the modal */
+     /* Add padding for spacing */
+}
+
+/* Rest of your CSS styles */
+.image-row{
+    display: flex;
+    /*overflow-x: auto;*/
+    width: 100%;
+    height: 485px;
+    margin-top: 250px;
+}
+
+.text-on-top {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    border-radius: 10px;
+}
